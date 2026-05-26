@@ -238,6 +238,10 @@ main{padding-top:96px}
 
 }
 @media (max-width: 768px) {
+  .hero{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
     .hero__img {
         margin-top: -20%;
         transform: scale(1); /* نرجع الصورة لحجمها الطبيعي عشان ما تقصش */
