@@ -271,7 +271,7 @@ main{padding-top:96px}
     .hero__overlay-text{
       position: absolute;
       top: 40%;
-      left: 50%;
+      right:55%;
       display: flex;
     
     }
