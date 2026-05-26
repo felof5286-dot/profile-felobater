@@ -237,8 +237,7 @@ main{padding-top:96px}
   filter: saturate(1.05) contrast(1.03);
  
 }
-/* التعديل الخاص بالموبايل */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero__img {
         transform: scale(1); /* نرجع الصورة لحجمها الطبيعي عشان ما تقصش */
         height: 50vh; /* الصورة تاخد نص طول الشاشة بس على الموبايل */
