@@ -235,13 +235,15 @@ main{padding-top:96px}
   height:100%;
   object-fit:cover;
   filter: saturate(1.05) contrast(1.03);
- 
+
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .hero__img {
+        margin-top: -50%;
         transform: scale(1); /* نرجع الصورة لحجمها الطبيعي عشان ما تقصش */
         height: 50vh; /* الصورة تاخد نص طول الشاشة بس على الموبايل */
     }
+    
 }
 .hero__veil{
   position:absolute;
@@ -264,7 +266,16 @@ main{padding-top:96px}
   user-select:none;
   pointer-events:none;
 }
-
+@media (max-width: 768px) {
+   
+    .hero__overlay-text{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      display: flex;
+    
+    }
+}
 .hero__content{position:relative;}
 .hero__grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:26px; align-items:start}
 
