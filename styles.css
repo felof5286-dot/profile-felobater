@@ -239,7 +239,7 @@ main{padding-top:96px}
 }
 @media (max-width: 768px) {
     .hero__img {
-        margin-top: -30%;
+        margin-top: -20%;
         transform: scale(1); /* نرجع الصورة لحجمها الطبيعي عشان ما تقصش */
         height: 50vh; /* الصورة تاخد نص طول الشاشة بس على الموبايل */
     }
