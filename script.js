@@ -176,6 +176,42 @@ window.generateResumePDF = async function generateResumePDF() {
   } catch (error) {
     console.error('PDF Error:', error);
   }
+  // 1. عند تحميل الصفحة، نجيب العدد الحالي من السيرفر
+window.onload = function() {
+    fetch('https://api.countapi.xyz/get/felo-portfolio/likes')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('love-count').innerText = data.value;
+        })
+        .catch(error => console.log('Error:', error));
+};
+
+// 1. جلب العدد عند تحميل الصفحة
+window.onload = function() {
+    fetch('https://api.count.getluna.dev/get/felo-portfolio/likes')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('love-count').innerText = data.value;
+        })
+        .catch(error => console.log('Error:', error));
+};
+
+// 2. زيادة العدد عند الضغط
+function sendLike() {
+    const btn = document.querySelector('.love-btn');
+    btn.disabled = true; 
+    
+    fetch('https://api.count.getluna.dev/hit/felo-portfolio/likes')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('love-count').innerText = data.value;
+            btn.disabled = false;
+        })
+        .catch(error => {
+            console.log('Error:', error);
+            btn.disabled = false;
+        });
+}
 };
 })();
 
