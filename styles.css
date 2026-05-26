@@ -248,8 +248,9 @@ main{padding-top:96px}
   }
     .hero__img {
         margin-top: -60%;
+        filter: saturate(1.25) contrast(1.2);
         transform: scale(1); /* نرجع الصورة لحجمها الطبيعي عشان ما تقصش */
-        height: 50vh; /* الصورة تاخد نص طول الشاشة بس على الموبايل */
+        height: 70vh; /* الصورة تاخد نص طول الشاشة بس على الموبايل */
     }
     
 }
