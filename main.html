@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio/CV of a Front-End Web Developer" />
+  <title>Front-End Developer • Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+ 
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__brand">
+        <span class="brand__mark" aria-hidden="true">◆</span>
+        <span class="brand__name">felo</span>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link is-active" href="#home" data-nav-link>Home</a></li>
+        <li><a class="nav__link" href="#about" data-nav-link>About</a></li>
+        <li><a class="nav__link" href="#projects" data-nav-link>Projects</a></li>
+        <li><a class="nav__link" href="#contact" data-nav-link>Contact</a></li>
+      </ul>
+
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="#contact" data-nav-cta>
+          <span>Hire Me</span>
+          <span class="btn__icon" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__img-wrap">
+          <img
+            src="back.png"
+            alt="Profile portrait"
+            class="hero__img"
+            loading="eager"
+          />
+        </div>
+        <div class="hero__veil"></div>
+        <div class="hero__overlay-text" aria-hidden="true">felo</div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__grid">
+          <div class="hero__copy" role="region" aria-label="Hero">
+            <p class="eyebrow">Front-End Web Developer & CS Student</p>
+            <h1 class="hero__title">
+            Front-End Web Developer & Computer Science Student Double Majoring in CS and Statistics. Dedicated to Crafting Highly Responsive, Data-Driven, and Visually Stunning Web Experiences
+            </h1>
+          
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact" aria-label="Contact me">
+                <span>Contact Me</span>
+                <span class="btn__icon" aria-hidden="true">➜</span>
+              </a>
+              <a class="btn btn--soft" href="#projects">
+                <span>View Projects</span>
+                <span class="btn__icon" aria-hidden="true">⟶</span>
+              </a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta-pill">
+                <span class="meta-pill__dot" aria-hidden="true"></span>
+                <span>React • Vanilla JS • CSS Architecture</span>
+              </div>
+              <div class="meta-pill">
+                <span class="meta-pill__dot meta-pill__dot--warm" aria-hidden="true"></span>
+                <span>Performance-first UI systems</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero__card" aria-label="Highlights">
+            <div class="glass-card">
+              <h2 class="glass-card__title">Technical Expertise</h2>
+              <ul class="glass-card__list">
+                <li>Pixel-perfect, modern UI</li>
+                <li>Fast Analytical Mindset</li>
+                <li> Lightning-Fast Speed</li>
+              </ul>
+              <div class="glass-card__bar" aria-hidden="true"></div>
+              <p class="glass-card__fine">Available for freelance projects & junior developer roles.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT + STATS -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="about-title">ABOUT</h2>
+          <span class="section__underline" aria-hidden="true"></span>
+        </header>
+
+        <div class="about">
+          <div class="about__portrait">
+            <div class="portrait-frame">
+              <img
+                src="me.png"
+                alt="Portrait"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="about__body">
+            <div class="about__top">
+              <h3 class="about__headline">Front-End Developer</h3>
+              <p class="about__bio">
+                I build performance-driven, scalable user interfaces with clean UI architecture.
+                My approach blends modern design sensibilities with production-grade engineering practices—so
+                your product feels premium and stays fast as it grows.
+              </p>
+            </div>
+
+            <div class="about__details" aria-label="Personal details">
+              <div class="info-tag">
+                <span class="info-tag__icon" aria-hidden="true">⌁</span>
+                <span class="info-tag__label">Name</span>
+                <span class="info-tag__value">felo</span>
+              </div>
+              <div class="info-tag">
+                <span class="info-tag__icon" aria-hidden="true">⌖</span>
+                <span class="info-tag__label">Location</span>
+                <span class="info-tag__value">Remote / Worldwide</span>
+              </div>
+            </div>
+
+            <div class="stats" aria-label="Achievements">
+              <article class="stat-card">
+                <div class="stat-card__num">9+ </div>
+                <div class="stat-card__label">Projects</div>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card__num">1+ </div>
+                <div class="stat-card__label">Experience</div>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card__num">95% </div>
+                <div class="stat-card__label">Lighthouse Score</div>
+              </article>
+            </div>
+
+            <div class="about__actions">
+           <a class="btn btn--primary btn--download" href="cv.pdf" download="Philopater_Resume.pdf">
+
+                <span>Download Resume</span>
+
+                <span class="btn__icon" aria-hidden="true">⬇</span>
+              </a>
+              <p class="about__note">PDF Resume • Updated 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="skills-title">SKILLS</h2>
+          <span class="section__underline" aria-hidden="true"></span>
+        </header>
+
+        <div class="skills" role="list" aria-label="Technical skills">
+          <span class="skill-badge" role="listitem">C++</span>
+          <span class="skill-badge" role="listitem">Data Structures</span>
+          <span class="skill-badge" role="listitem">Problem Solving</span>
+          <span class="skill-badge" role="listitem">Statistical Analysis</span>
+          <span class="skill-badge" role="listitem">JavaScript (ES6+)</span>
+          <span class="skill-badge" role="listitem">React.js</span>
+          <span class="skill-badge" role="listitem">CSS Architecture</span>
+          <span class="skill-badge" role="listitem">Responsive Design</span>
+          <span class="skill-badge" role="listitem">Performance Tuning</span>
+          <span class="skill-badge" role="listitem">Git & Collaboration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="projects-title">PROJECTS</h2>
+          <span class="section__underline" aria-hidden="true"></span>
+        </header>
+
+        <div class="projects" aria-label="Project cards">
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__tag">Algorithmic Solutions</span>
+              <span class="project-card__year">2026</span>
+            </div>
+            <h3 class="project-card__title">Algorithmic Problem Solving</h3>
+            <p class="project-card__desc">Developed optimized solutions for complex algorithmic problems using C++. Focused on Data Structures, Dynamic Programming, and execution efficiency with high performance.</p>
+            <div class="project-card__actions">
+              <a class="link" href="#contact">Discuss</a>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="muted">C++ / Data Structures / Algorithms</span>
+            </div>
+          </article>
+            <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__tag">Data Analytics</span>
+              <span class="project-card__year">2026</span>
+            </div>
+            <h3 class="project-card__title">Statistical Data Visualization</h3>
+            <p class="project-card__desc">Built interactive dashboards and plots to analyze statistical datasets. Focused on transforming dry equations into clear, visual data insights using programming tools.</p>
+            <div class="project-card__actions">
+              <a class="link" href="#contact">Discuss</a>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="muted">Python / Data visualization</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__tag">Creative portfolio</span>
+              <span class="project-card__year">2026</span>
+            </div>
+            <h3 class="project-card__title">Personal portfolio & UI system</h3>
+            <p class="project-card__desc">Designed and engineered a high-performance, modern portfolio showcasing responsive design and Glassmorphism. Optimized for perfect accessibility and speed metrics.</p>
+            <div class="project-card__actions">
+              <a class="link" href="#contact">Discuss</a>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="muted">Html5 / Css architecture / Vanilla js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="contact-title">CONTACT</h2>
+          <span class="section__underline" aria-hidden="true"></span>
+        </header>
+
+        <div class="contact">
+          <div class="contact__left">
+            <div class="contact-block">
+              <h3 class="contact-block__title">Contact Information</h3>
+              <p class="contact-block__sub">Fast responses • Clear communication.</p>
+
+              <div class="contact-list">
+<a class="contact-item" href="mailto:felof5286@gmail.com">
+                  <span class="contact-item__icon" aria-hidden="true">✉</span>
+                  <span class="contact-item__text">
+                    <span class="contact-item__label">Email</span>
+                    <span class="contact-item__value">felof5286@gmail.com</span>
+                  </span>
+                </a>
+
+                <a class="contact-item" href="tel:+201206749830">
+                  <span class="contact-item__icon" aria-hidden="true">☎</span>
+                  <span class="contact-item__text">
+                    <span class="contact-item__label">Phone</span>
+                    <span class="contact-item__value">+20 120 672 9830</span>
+                  </span>
+                </a>
+
+                <div class="contact-item" role="group" aria-label="Location">
+                  <span class="contact-item__icon" aria-hidden="true">⌖</span>
+                  <span class="contact-item__text">
+                    <span class="contact-item__label">Location</span>
+                    <span class="contact-item__value">Remote / Worldwide</span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="follow">
+                <h4 class="follow__title">Follow Me</h4>
+                <div class="social" aria-label="Social links">
+                  <a class="social__icon" href="https://www.facebook.com/share/14m5rpVeUnU/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-social="facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                  <a class="social__icon" href="https://www.instagram.com/felobateressam?igsh=MWRldDdwY2dpNm5hZw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-social="instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a class="social__icon social__icon--whatsapp" href="https://wa.me/qr/JYBMLANBZXIGI1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-social="whatsapp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__right">
+            <form class="form glass-card glass-card--form" id="contact-form" autocomplete="on" action="https://formspree.io/f/xredoeko" method="POST">
+              <h3 class="glass-card__title">Send a message</h3>
+              <p class="glass-card__fine">I'd Love To Hear About Your Project.</p>
+
+              <div class="form__grid">
+                <label class="field">
+                  <span class="field__label">Name</span>
+                  <input class="field__input" type="text" name="name" required placeholder="Your name" />
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input class="field__input" type="email" name="email" required placeholder="you@example.com" />
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">Message</span>
+                  <textarea
+                    class="field__input"
+                    name="message"
+                    id="message"
+                    required
+                    placeholder="I'd Love To Hear About Your Project"
+                  ></textarea>
+
+                  <div class="form__actions">
+                    <button class="send-btn" type="submit">
+                      <span aria-hidden="true">➤</span>
+                      <span>Send Message</span>
+                    </button>
+                  </div>
+                </label>
+              </div>
+            </form>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+  
